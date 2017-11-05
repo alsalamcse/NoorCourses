@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NoorCourses</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="age">Age</string>
+    <string name="address">Address</string>
+    <string name="subject">Subject</string>
+</resources>

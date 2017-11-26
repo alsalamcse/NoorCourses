@@ -42,7 +42,25 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         firebaseUser = auth.getCurrentUser();
         btnSave.setOnClickListener(this);
         btndelete.setOnClickListener(this);
-    }
+
+
+        auth = FirebaseAuth.getInstance();
+        firebaseUser= auth.getCurrentUser();
+        if (firebaseUser== null){
+            startActivity(new Intent(this,LogInActivity.class));
+            finish();
+            return;
+        }
+
+            else
+                {
+                String userName = firebaseUser.getDisplayName();
+                if (firebaseUser.getPhotoUrl() !=null){
+                    String photoUr1 = firebaseUser.getPhotoUrl().toString();
+                }
+            }
+        }
+
 
 
     private void dataHandler(){

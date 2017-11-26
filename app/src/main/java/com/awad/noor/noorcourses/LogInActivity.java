@@ -19,8 +19,10 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
     private static final String PREF_FILE_NAME= "NoorPref";
     private EditText etEmail;
     private EditText etPassword;
-    private Button btnUp;
     private Button btnIn;
+    private Button btnUp;
+    private Button btnsearch;
+
     private FirebaseUser firebaseUser;
     private FirebaseAuth auth;
 
@@ -37,6 +39,7 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
         btnIn.setOnClickListener(this);
         auth = FirebaseAuth.getInstance();
         firebaseUser = auth.getCurrentUser();
+        btnsearch=(Button) findViewById(R.id.btnsearch);
 
 
     }

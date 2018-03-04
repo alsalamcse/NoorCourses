@@ -60,7 +60,7 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     Toast.makeText(LogInActivity.this, "signIn Successful.", Toast.LENGTH_SHORT).show();
-                    Intent intent=new Intent(LogInActivity.this,MainListActivity.class);
+                    Intent intent=new Intent(LogInActivity.this,Listofcourses.class);
                     startActivity(intent);
                     finish();
                 } else {

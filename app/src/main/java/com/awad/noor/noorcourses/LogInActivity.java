@@ -40,6 +40,7 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
         auth = FirebaseAuth.getInstance();
         firebaseUser = auth.getCurrentUser();
         btnsearch=(Button) findViewById(R.id.btnsearch);
+        btnsearch.setOnClickListener(this);
 
 
     }
@@ -80,6 +81,12 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
 
         if (view==btnIn){
             dataHandler();
+        }
+
+        if (view==btnsearch)
+        {
+            Intent intent = new Intent(this,Searchforcourse.class);
+            startActivity(intent);
         }
     }
 }

@@ -33,33 +33,17 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-        btnSave=(Button) findViewById(R.id.btnSave);
-        btndelete=(Button) findViewById(R.id.btndelete);
-        eTusername=(EditText) findViewById(R.id.eTusername);
-        eTemail=(EditText) findViewById(R.id.eTemail);
-        eTPassword=(EditText) findViewById(R.id.etPassword);
+        btnSave = (Button) findViewById(R.id.btnSave);
+        btndelete = (Button) findViewById(R.id.btndelete);
+        eTusername = (EditText) findViewById(R.id.eTusername);
+        eTemail = (EditText) findViewById(R.id.eTemail);
+        eTPassword = (EditText) findViewById(R.id.etPassword);
         auth = FirebaseAuth.getInstance();
         firebaseUser = auth.getCurrentUser();
         btnSave.setOnClickListener(this);
         btndelete.setOnClickListener(this);
+    }
 
-
-        auth = FirebaseAuth.getInstance();
-        firebaseUser= auth.getCurrentUser();
-        if (firebaseUser== null){
-            startActivity(new Intent(this,LogInActivity.class));
-            finish();
-            return;
-        }
-
-            else
-                {
-                String userName = firebaseUser.getDisplayName();
-                if (firebaseUser.getPhotoUrl() !=null){
-                    String photoUr1 = firebaseUser.getPhotoUrl().toString();
-                }
-            }
-        }
 
 
 

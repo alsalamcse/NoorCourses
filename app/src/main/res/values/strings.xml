@@ -1,4 +1,15 @@
 <resources>
+    
+    <array name="subjects">
+        <item>English</item>
+        <item>Arabic</item>
+        <item>Music</item>
+        <item>Art</item>
+        <item>Math</item>
+        <item>Physics</item>
+
+
+    </array>
     <string name="app_name">NoorCourses</string>
     <string name="email">Email</string>
     <string name="password">Password</string>

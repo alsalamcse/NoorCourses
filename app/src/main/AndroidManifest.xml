@@ -19,7 +19,13 @@
         <activity android:name=".SignUpActivity" />
         <activity android:name=".MainListActivity" />
         <activity android:name=".Searchforcourse" />
-        <activity android:name=".Listofcourses"></activity>
+        <activity android:name=".Listofcourses" />
+        <activity android:name=".Arabic" />
+        <activity android:name=".English" />
+        <activity android:name=".Music" />
+        <activity android:name=".Art" />
+        <activity android:name=".Math" />
+        <activity android:name=".Physics"></activity>
     </application>
 
 </manifest>

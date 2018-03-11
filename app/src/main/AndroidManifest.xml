@@ -25,7 +25,10 @@
         <activity android:name=".Music" />
         <activity android:name=".Art" />
         <activity android:name=".Math" />
-        <activity android:name=".Physics"></activity>
+        <activity android:name=".Physics" />
+        <activity android:name=".Sport" />
+        <activity android:name=".Chemistry" />
+        <activity android:name=".Biologically"></activity>
     </application>
 
 </manifest>

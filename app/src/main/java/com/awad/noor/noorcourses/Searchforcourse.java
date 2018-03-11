@@ -1,5 +1,6 @@
 package com.awad.noor.noorcourses;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,7 +10,7 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class Searchforcourse extends AppCompatActivity implements AdapterView.OnItemSelectedListener
+public class Searchforcourse extends AppCompatActivity implements View.OnClickListener
 {
     private Button btnArabic;
     private Button btnEnglish;
@@ -43,14 +44,50 @@ public class Searchforcourse extends AppCompatActivity implements AdapterView.On
 
     }
 
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long l) {
 
-
-    }
 
     @Override
-    public void onNothingSelected(AdapterView<?> adapterView) {
+    public void onClick(View view) {
+        if (view==btnArabic){
+            Intent intent= new Intent(this,Arabic.class);
+            startActivity(intent);
+            }
 
-    }
-}
+            if (view==btnEnglish){
+                Intent intent = new Intent(this, English.class);
+                startActivity(intent);
+            }
+            if (view==btnMath) {
+                Intent intent = new Intent(this, Math.class);
+                startActivity(intent);
+            }
+            if (view==btnMusic) {
+                Intent intent = new Intent(this, Music.class);
+                startActivity(intent);
+            }
+            if (view==btnPhysics) {
+                Intent intent = new Intent(this, Physics.class);
+                startActivity(intent);
+            }
+            if (view==btnArt) {
+                Intent intent = new Intent(this, Art.class);
+                startActivity(intent);
+            }
+            if (view==btnSport) {
+                Intent intent = new Intent(this, Sport.class);
+                startActivity(intent);
+            }
+            if (view==btnChemistry) {
+                Intent intent = new Intent(this, Chemistry.class);
+                startActivity(intent);
+            }
+            if (view==btnBiologically){
+                Intent intent = new Intent(this,Biologically.class);
+                startActivity(intent);
+
+            }
+            }
+            }
+
+
+

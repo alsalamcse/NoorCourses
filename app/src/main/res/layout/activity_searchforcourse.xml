@@ -4,12 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.awad.noor.noorcourses.Searchforcourse">
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="363dp"
+    <Button
+        android:id="@+id/btnArabic"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:text="Arabic" />
+
+    <Button
+        android:id="@+id/btnEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="English" />
+
+    <Button
+        android:id="@+id/btnMath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Math" />
+
+    <Button
+        android:id="@+id/btnMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Music" />
+
+    <Button
+        android:id="@+id/btnPhysics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Physics" />
+
+    <Button
+        android:id="@+id/btnArt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Art" />
+
+    <Button
+        android:id="@+id/btnSport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sport" />
+
+    <Button
+        android:id="@+id/btnChemistry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chemistry" />
+
+    <Button
+        android:id="@+id/btnBiologically"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Biologically" />
 </LinearLayout>
